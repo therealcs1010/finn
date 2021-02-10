@@ -41,7 +41,8 @@ recho () {
   echo -e "${RED}$1${NC}"
 }
 
-if [ -z "$VIVADO_PATH" ];then
+
+if [ -z "D:/Xilinx/Vivado/2019.2" ];then
   recho "Please set the VIVADO_PATH that contains the path to your Vivado installation directory."
   recho "FINN functionality depending on Vivado or Vivado HLS will not be available."
 fi
