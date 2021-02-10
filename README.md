@@ -12,6 +12,7 @@ inference on FPGAs.
 It specifically targets <a href="https://github.com/maltanar/qnn-inference-examples" target="_blank">quantized neural
 networks</a>, with emphasis on
 generating dataflow-style architectures customized for each network.
+
 The resulting FPGA accelerators are highly efficient and can yield high throughput and low latency.
 The framework is fully open-source in order to give a higher degree of flexibility, and is intended to enable neural network research spanning several layers of the software/hardware abstraction stack.
 
