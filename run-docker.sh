@@ -41,9 +41,7 @@ recho () {
   echo -e "${RED}$1${NC}"
 }
 
-VIVADO_PATH = "D:/Xilinx/Vivado/2019.2"
-
-if [ -z "{$VIVADO_PATH}" ];then
+if [ -z "$VIVADO_PATH" ];then
   recho "Please set the VIVADO_PATH that contains the path to your Vivado installation directory."
   recho "FINN functionality depending on Vivado or Vivado HLS will not be available."
 fi
@@ -71,8 +69,8 @@ fi
 DOCKER_GID=$(id -g)
 DOCKER_GNAME=$(id -gn)
 DOCKER_UNAME=$(id -un)
-DOCKER_UID="simyujie"
-DOCKER_PASSWD="Qwertyuiop123##"
+DOCKER_UID=$(id -u)
+DOCKER_PASSWD="finn"
 # generate a random number per-run to allow multiple
 # containers from the same user
 DOCKER_RND=$(shuf -i0-32768 -n1)
